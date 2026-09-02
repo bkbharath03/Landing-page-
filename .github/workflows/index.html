@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suffo — Architecture, Urbanity & Spatial Design</title>
+  <meta name="description" content="Suffo is a contemporary architecture and urban planning studio designing sustainable, human-centric living spaces and residential landmarks worldwide.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ====================================================
+       1. TOP HERO WRAPPER & NAVIGATION
+  ==================================================== -->
+  <div class="hero-wrapper" id="home">
+    <!-- Background Architectural Watermark -->
+    <div class="watermark-container" aria-hidden="true">
+      <span class="watermark-logo">Suffo</span>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+      <div class="header-inner container-main">
+        <a href="#home" class="brand-badge" aria-label="Suffo Home">
+          <span class="brand-dot"></span>
+          <span class="brand-text">SUFFO <em>STUDIO</em></span>
+        </a>
+
+        <nav class="nav-pill-group" aria-label="Primary Navigation">
+          <a href="#home" class="nav-pill active">Home</a>
+          <a href="#agents" class="nav-pill">Agents</a>
+          <a href="#portfolio" class="nav-pill">Portfolio</a>
+          <a href="#wip" class="nav-pill">In Progress</a>
+          <a href="#collection" class="nav-pill">Collection</a>
+          <a href="#about" class="nav-pill">About</a>
+        </nav>
+
+        <div class="header-right">
+          <a href="#contact" class="nav-link-subtle">Contact</a>
+          <a href="#explore" class="btn-pill-explore">
+            <span>Start Exploring</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Top Metadata Bar -->
+    <div class="hero-top-meta container-main">
+      <div class="meta-item meta-ethos">
+        <span class="meta-label">DISCIPLINE</span>
+        <p>Quality // Urbanity // Sustainability</p>
+      </div>
+
+      <div class="meta-item meta-time">
+        <span class="meta-label">STUDIO TIME</span>
+        <p><span id="liveClock">11:42:09</span> <span class="timezone-tag">UTC+1</span></p>
+      </div>
+
+      <div class="meta-item meta-location">
+        <span class="meta-label">HEADQUARTERS</span>
+        <p>4140 Parker Rd, Allentown, NM 31134</p>
+      </div>
+    </div>
+
+    <!-- Hero Main Visual Stage -->
+    <main class="hero-stage container-main">
+      <div class="hero-visual-frame">
+        <img 
+          src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1800&q=85" 
+          alt="Modern Architectural Beachfront Villa with Geometric Cantilevers" 
+          class="hero-main-img" 
+          loading="eager"
+        >
+
+        <div class="hero-img-overlay"></div>
+
+        <!-- Interactive Hotspot 1 -->
+        <div class="glass-tag tag-living" data-hotspot="living">
+          <div class="tag-header">
+            <span class="pulse-indicator"></span>
+            <span class="tag-category">INTERIOR SPACE</span>
+          </div>
+          <div class="tag-title">Living Pavillion & Terrace</div>
+          <div class="tag-sub">1802 Forest City RD, Forest City TWP, ME</div>
+          <div class="tag-metrics"><span>216 m²</span><span>Open Plan</span><span>3.6m Ceilings</span></div>
+        </div>
+
+        <!-- Interactive Hotspot 2 -->
+        <div class="glass-tag tag-ceiling" data-hotspot="ceiling">
+          <div class="tag-header">
+            <span class="pulse-indicator"></span>
+            <span class="tag-category">ACOUSTIC SPEC</span>
+          </div>
+          <div class="tag-title">Modern Monolithic Ceiling</div>
+          <div class="tag-sub">Narrandera [92SC] Continuous Micro-perforated Timber</div>
+        </div>
+
+        <!-- Side Social Floating Controls -->
+        <div class="hero-social-dock" aria-label="Social links">
+          <a href="#share" class="dock-btn" title="Share Project" aria-label="Share">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+          </a>
+          <a href="#instagram" class="dock-btn" title="Instagram" aria-label="Instagram">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#linkedin" class="dock-btn" title="LinkedIn" aria-label="LinkedIn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Bottom Baseline Grid -->
+      <div class="hero-bottom-bar">
+        <div class="hero-stamp">
+          <span class="stamp-accent">EST. 2024</span>
+          <span class="stamp-text">ARCHITECTURAL DESIGN & DEVELOPMENT</span>
+        </div>
+        <div class="hero-statement">
+          <p>Discover the difference with Suffo, where architectural mastery and progressive urban engineering meet bespoke client service.</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- ====================================================
+       2. ASYMMETRIC SEARCH & DISCOVERY SECTION
+  ==================================================== -->
+  <section class="discovery-section" id="agents">
+    <div class="container-main discovery-layout">
+      <!-- Left Column: Search & Editorial -->
+      <div class="discovery-left">
+        <div class="filter-pills-row" role="tablist" aria-label="Property Categories">
+          <button class="filter-pill active" role="tab" aria-selected="true" data-filter="all">All Typologies</button>
+          <button class="filter-pill" role="tab" aria-selected="false" data-filter="house">House</button>
+          <button class="filter-pill" role="tab" aria-selected="false" data-filter="apartment">Appartemen</button>
+          <button class="filter-pill" role="tab" aria-selected="false" data-filter="residential">Residential</button>
+          <button class="filter-pill circle-btn" aria-label="More filters">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+
+        <div class="section-kicker">
+          <span class="kicker-dot"></span>
+          <span>AGENTS & ADVISORY</span>
+        </div>
+
+        <h2 class="search-heading">
+          Are you<br>
+          looking<br>
+          <span class="green-hyphen">—</span> for an<br>
+          <span class="italic-serif">aesthetic</span> home?
+        </h2>
+
+        <div class="search-bar-wrapper">
+          <form class="search-box" id="propertySearchForm" onsubmit="event.preventDefault();">
+            <div class="search-icon-left">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <input type="text" id="searchInput" placeholder="Search location, typology, or spec..." autocomplete="off">
+            <button type="submit" class="search-submit" aria-label="Execute search">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+          </form>
+          <span class="search-hint">Try: "Liberty Hill", "Germany", "Thessaloniki", or "Villa"</span>
+        </div>
+
+        <div class="discovery-blurb-grid">
+          <div class="blurb-col">
+            <p>With its square floor plan, cubist shape, and impressive 216 m² of curated living space, Held not only offers panoramic river vistas, but also an exceptionally harmonious flow of light.</p>
+          </div>
+          <div class="blurb-col">
+            <p>Embedded into the natural hillside topography, carefully articulated recesses create sheltered terraces that seamlessly connect tactile interiors with raw surrounding landscapes.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Interactive 3D Card Stack -->
+      <div class="discovery-right">
+        <div class="giant-num-bg" aria-hidden="true">01</div>
+
+        <div class="cards-stack" id="cardsStack">
+          <!-- Back Stacked Card -->
+          <article class="skew-card card-back" data-category="house" data-title="Forest City Property">
+            <div class="card-badge">RESIDENTIAL</div>
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="Forest City Modern Residence">
+            </div>
+            <div class="card-content">
+              <div class="card-loc-tag">FOREST CITY TWP, ME</div>
+              <h3>1802 Forest City RD, Forest City TWP, ME</h3>
+              <div class="card-footer">
+                <div class="card-time-badge">
+                  <span class="pulse-dot-mini"></span>
+                  <span>Listed 9h ago</span>
+                </div>
+                <button class="add-circle-btn" title="Add to Shortlist" aria-label="Add to Shortlist">
+                  <span class="btn-icon">+</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Front Stacked Card -->
+          <article class="skew-card card-front" data-category="residential" data-title="Liberty Hill House">
+            <div class="card-badge featured-badge">FEATURED</div>
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Liberty Hill Contemporary Villa">
+            </div>
+            <div class="card-content">
+              <div class="card-loc-tag">INDEPENDENCE, VA</div>
+              <h3>1776 Liberty Hill LN, Independence, VA</h3>
+              <div class="card-footer">
+                <div class="card-time-badge">
+                  <span class="pulse-dot-mini"></span>
+                  <span>Listed moments ago</span>
+                </div>
+                <button class="add-circle-btn" title="Add to Shortlist" aria-label="Add to Shortlist">
+                  <span class="btn-icon">+</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       3. FLIP GALLERY PORTFOLIO GRID (3x2 Structured Grid)
+  ==================================================== -->
+  <section class="gallery-metrics-section" id="portfolio">
+    <div class="container-main">
+      <div class="section-header-compact">
+        <div>
+          <span class="section-kicker"><span class="kicker-dot"></span>PORTFOLIO BENCHMARKS</span>
+          <h2 class="section-title-md">Global Architectural Metrics</h2>
+        </div>
+        <p class="section-subtext">Hover over any property card to reveal detailed architectural photographic surveys and spatial typology specifications.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Card 1 -->
+        <div class="metric-card" tabindex="0">
+          <div class="card-inner">
+            <div class="card-face card-front-face">
+              <div class="card-top-row">
+                <span class="loc-country">Germany</span>
+                <span class="card-id-pill">AG24K</span>
+              </div>
+              <div class="card-center-metric">
+                <div class="metric-value">664 <span class="metric-unit">m²</span></div>
+                <div class="metric-title">Königswinter Villa</div>
+              </div>
+              <div class="card-bottom-row">
+                <span>3 Levels</span>
+                <span class="card-hover-hint">Hover to Flip &rarr;</span>
+              </div>
+            </div>
+            <div class="card-face card-back-face" style="background-image: url('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80')">
+              <div class="card-back-overlay">
+                <span class="back-tag">COMPLETED 2024</span>
+                <h4>Königswinter Residence</h4>
+                <p>Minimalist monolithic concrete & floor-to-ceiling glass pavilions.</p>
+                <a href="#wip" class="back-btn-pill">View Case Study &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="metric-card" tabindex="0">
+          <div class="card-inner">
+            <div class="card-face card-front-face">
+              <div class="card-top-row">
+                <span class="loc-country">Russia</span>
+                <span class="card-id-pill">MC20K</span>
+              </div>
+              <div class="card-center-metric">
+                <div class="metric-value">216 <span class="metric-unit">m²</span></div>
+                <div class="metric-title">Moscow Penthouse</div>
+              </div>
+              <div class="card-bottom-row">
+                <span>5 Floors</span>
+                <span class="card-hover-hint">Hover to Flip &rarr;</span>
+              </div>
+            </div>
+            <div class="card-face card-back-face" style="background-image: url('https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80')">
+              <div class="card-back-overlay">
+                <span class="back-tag">INTERIOR ARCHITECTURE</span>
+                <h4>Moscow Urban Suite</h4>
+                <p>Brushed brass accents, herringbone oak, and acoustic micro-slats.</p>
+                <a href="#wip" class="back-btn-pill">View Case Study &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="metric-card" tabindex="0">
+          <div class="card-inner">
+            <div class="card-face card-front-face">
+              <div class="card-top-row">
+                <span class="loc-country">Indonesia</span>
+                <span class="card-id-pill">JK12K</span>
+              </div>
+              <div class="card-center-metric">
+                <div class="metric-value">928 <span class="metric-unit">m²</span></div>
+                <div class="metric-title">Jakarta Tropical Villa</div>
+              </div>
+              <div class="card-bottom-row">
+                <span>4 Levels</span>
+                <span class="card-hover-hint">Hover to Flip &rarr;</span>
+              </div>
+            </div>
+            <div class="card-face card-back-face" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80')">
+              <div class="card-back-overlay">
+                <span class="back-tag">SUSTAINABILITY GOLD</span>
+                <h4>Jakarta Eco Estate</h4>
+                <p>Passive solar shading and bio-climatic cross ventilation atrium.</p>
+                <a href="#wip" class="back-btn-pill">View Case Study &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="metric-card" tabindex="0">
+          <div class="card-inner">
+            <div class="card-face card-front-face">
+              <div class="card-top-row">
+                <span class="loc-country">Australia</span>
+                <span class="card-id-pill">AB45U</span>
+              </div>
+              <div class="card-center-metric">
+                <div class="metric-value">534 <span class="metric-unit">m²</span></div>
+                <div class="metric-title">Sydney Coastal Ridge</div>
+              </div>
+              <div class="card-bottom-row">
+                <span>4 Floors</span>
+                <span class="card-hover-hint">Hover to Flip &rarr;</span>
+              </div>
+            </div>
+            <div class="card-face card-back-face" style="background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80')">
+              <div class="card-back-overlay">
+                <span class="back-tag">COASTAL CLIFF</span>
+                <h4>Sydney Ridge House</h4>
+                <p>Cantilevered infinity glass deck overlooking the Pacific coast.</p>
+                <a href="#wip" class="back-btn-pill">View Case Study &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="metric-card" tabindex="0">
+          <div class="card-inner">
+            <div class="card-face card-front-face">
+              <div class="card-top-row">
+                <span class="loc-country">Indonesia</span>
+                <span class="card-id-pill">Y2KC</span>
+              </div>
+              <div class="card-center-metric">
+                <div class="metric-value">420 <span class="metric-unit">m²</span></div>
+                <div class="metric-title">Yogyakarta Courtyard</div>
+              </div>
+              <div class="card-bottom-row">
+                <span>2 Levels</span>
+                <span class="card-hover-hint">Hover to Flip &rarr;</span>
+              </div>
+            </div>
+            <div class="card-face card-back-face" style="background-image: url('https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80')">
+              <div class="card-back-overlay">
+                <span class="back-tag">HERITAGE FUSION</span>
+                <h4>Yogyakarta Pavilion</h4>
+                <p>Volcanic stone base with handcrafted teak wood screen enclosures.</p>
+                <a href="#wip" class="back-btn-pill">View Case Study &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="metric-card" tabindex="0">
+          <div class="card-inner">
+            <div class="card-face card-front-face">
+              <div class="card-top-row">
+                <span class="loc-country">Japan</span>
+                <span class="card-id-pill">TK01X</span>
+              </div>
+              <div class="card-center-metric">
+                <div class="metric-value">548 <span class="metric-unit">m²</span></div>
+                <div class="metric-title">Tokyo Urban Tower</div>
+              </div>
+              <div class="card-bottom-row">
+                <span>8 Floors</span>
+                <span class="card-hover-hint">Hover to Flip &rarr;</span>
+              </div>
+            </div>
+            <div class="card-face card-back-face" style="background-image: url('https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80')">
+              <div class="card-back-overlay">
+                <span class="back-tag">SEISMIC DAMPING</span>
+                <h4>Tokyo Shibuya Studio</h4>
+                <p>Exposed architectural concrete with vertical bonsai garden terraces.</p>
+                <a href="#wip" class="back-btn-pill">View Case Study &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       4. WORK IN PROGRESS SPECIFICATIONS
+  ==================================================== -->
+  <section class="wip-section" id="wip">
+    <div class="container-main">
+      <div class="wip-top-grid">
+        <div class="wip-title-block">
+          <span class="section-kicker"><span class="kicker-dot"></span>COMMISSION IN DEVELOPMENT</span>
+          <h2 class="wip-display-title">
+            Quality<br>
+            <span class="green-hyphen">—</span> Urbanity<br>
+            Sustainability
+          </h2>
+        </div>
+
+        <div class="wip-desc-block">
+          <div class="wip-status-badge">
+            <span class="pulse-dot-mini green"></span>
+            <span>PHASE 03: UNDER CONSTRUCTION</span>
+          </div>
+          <p>Suffo invests primarily in its people and sustainable materiality, always aiming to apply the highest European architectural standards. We build enduring spaces designed to evolve gracefully with their inhabitants.</p>
+          <div class="wip-cta-row">
+            <a href="#contact" class="btn-black-pill">Discover Specifications</a>
+            <a href="#collection" class="btn-outline-pill">Explore Index</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tabular Specs Bar -->
+      <div class="wip-specs-table" role="region" aria-label="Project AG24K Specifications">
+        <div class="spec-col">
+          <label>PROJECT CODE</label>
+          <div class="spec-val">AG24K</div>
+          <span class="spec-sub">Residential Tower</span>
+        </div>
+        <div class="spec-col">
+          <label>LOCATION</label>
+          <div class="spec-val">Thessaloniki</div>
+          <span class="spec-sub">Agathoupoleos District</span>
+        </div>
+        <div class="spec-col">
+          <label>COMPLETION</label>
+          <div class="spec-val year-val" id="specYear">2024</div>
+          <span class="spec-sub">Q4 Final Handover</span>
+        </div>
+        <div class="spec-col">
+          <label>ROOM CONFIG</label>
+          <div class="spec-val">3–4 Bed</div>
+          <span class="spec-sub">+ Private Rooftop</span>
+        </div>
+        <div class="spec-col">
+          <label>TOTAL GROSS AREA</label>
+          <div class="spec-val">745 <span class="unit-sm">sq.m.</span></div>
+          <span class="spec-sub">100% Certified Passive</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       5. INTERACTIVE COLLECTION (ACCORDION & SMART CURSOR PREVIEW)
+  ==================================================== -->
+  <section class="collection-section" id="collection">
+    <div class="container-main">
+      <div class="collection-header">
+        <div class="header-left">
+          <span class="collection-tag">&bull; ARCHIVE INDEX</span>
+          <h2>Life Along the Coast.</h2>
+        </div>
+        <div class="header-right-meta">
+          <span class="count-badge">08 ARCHIVES</span>
+          <span class="meta-note">Selected coastal residences & private villas</span>
+        </div>
+      </div>
+
+      <!-- Interactive Table & Floating Preview Area -->
+      <div class="collection-interactive-container">
+        <!-- Floating Cursor-Following Preview Card -->
+        <div class="hover-preview-box" id="hoverPreview" aria-hidden="true">
+          <div class="preview-img-wrap">
+            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Preview Image" id="previewImg">
+          </div>
+          <div class="preview-meta-pill" id="previewMeta">
+            <span class="prev-title">512 House</span>
+            <span class="prev-spec">7,517 sq.m. &bull; Athens</span>
+          </div>
+        </div>
+
+        <ul class="accordion-list" role="list">
+          <li class="accordion-item" data-title="K - Residence" data-spec="4,421 sq.m. • I. Zambeliou" data-image="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80">
+            <span class="item-num">01</span>
+            <span class="item-name">K - Residence</span>
+            <span class="item-loc">Contribution of Karakas, I. Zambeliou</span>
+            <span class="item-type">Private Villa</span>
+            <span class="item-size">4,421 sq.m.</span>
+            <span class="item-arrow">&nearr;</span>
+          </li>
+
+          <li class="accordion-item" data-title="PA9 Appartement" data-spec="3,320 sq.m. • Thessaloniki" data-image="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80">
+            <span class="item-num">02</span>
+            <span class="item-name">PA9 Appartement</span>
+            <span class="item-loc">Patron 9, Thessaloniki</span>
+            <span class="item-type">Urban Penthouse</span>
+            <span class="item-size">3,320 sq.m.</span>
+            <span class="item-arrow">&nearr;</span>
+          </li>
+
+          <li class="accordion-item" data-title="Momento Mori House" data-spec="4,512 sq.m. • Athens" data-image="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80">
+            <span class="item-num">03</span>
+            <span class="item-name">Momento Mori House</span>
+            <span class="item-loc">Arkadias 43, Athens</span>
+            <span class="item-type">Cliff Residence</span>
+            <span class="item-size">4,512 sq.m.</span>
+            <span class="item-arrow">&nearr;</span>
+          </li>
+
+          <li class="accordion-item active" data-title="512 House" data-spec="7,517 sq.m. • Athens" data-image="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80">
+            <span class="item-num">04</span>
+            <span class="item-name">512 House</span>
+            <span class="item-loc">59 Eleftheriou Venizelou, Athens</span>
+            <span class="item-type">Residential Complex</span>
+            <span class="item-size">7,517 sq.m.</span>
+            <span class="item-arrow">&nearr;</span>
+          </li>
+
+          <li class="accordion-item" data-title="Karaoli Hosu Residence" data-spec="3,120 sq.m. • I. Zambeliou" data-image="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80">
+            <span class="item-num">05</span>
+            <span class="item-name">Karaoli Hosu Residence</span>
+            <span class="item-loc">Contribution of Karakas, I. Zambeliou</span>
+            <span class="item-type">Eco Villa</span>
+            <span class="item-size">3,120 sq.m.</span>
+            <span class="item-arrow">&nearr;</span>
+          </li>
+
+          <li class="accordion-item" data-title="Il Sogno Residential" data-spec="9,629 sq.m. • Zadar, HR" data-image="https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=800&q=80">
+            <span class="item-num">06</span>
+            <span class="item-name">Il Sogno Residential</span>
+            <span class="item-loc">Zadar, Croatia</span>
+            <span class="item-type">Masterplan Estate</span>
+            <span class="item-size">9,629 sq.m.</span>
+            <span class="item-arrow">&nearr;</span>
+          </li>
+
+          <li class="accordion-item" data-title="Yosemite Appartement" data-spec="4,837 sq.m. • Lisbon" data-image="https://images.unsplash.com/photo-1600607687644-c7171b42498b?auto=format&fit=crop&w=800&q=80">
+            <span class="item-num">07</span>
+            <span class="item-name">Yosemite Appartement</span>
+            <span class="item-loc">Loja 3, Lisbon, Portugal</span>
+            <span class="item-type">Heritage Loft</span>
+            <span class="item-size">4,837 sq.m.</span>
+            <span class="item-arrow">&nearr;</span>
+          </li>
+
+          <li class="accordion-item" data-title="Vivo Appartement" data-spec="6,421 sq.m. • Thessaloniki" data-image="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=800&q=80">
+            <span class="item-num">08</span>
+            <span class="item-name">Vivo Appartement</span>
+            <span class="item-loc">Faramakidou Streets, Thessaloniki</span>
+            <span class="item-type">Multi-Family</span>
+            <span class="item-size">6,421 sq.m.</span>
+            <span class="item-arrow">&nearr;</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Bottom Editorial Lockup -->
+      <div class="collection-bottom">
+        <div class="bottom-editorial-text">
+          <p>Enjoy days spent along the coast, listening to the cadence of nature along the crystal-clear Adriatic Sea. Discover hidden coves, architectural terraces, and sustainable materials designed to age gracefully under sea breezes.</p>
+        </div>
+        <div class="huge-coast-title">
+          <span class="dash">—</span>the coast.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       6. SITE FOOTER & INQUIRY STAGE
+  ==================================================== -->
+  <footer class="site-footer" id="about">
+    <div class="container-main">
+      <div class="footer-top-bar">
+        <div class="footer-brand">
+          <span class="brand-dot"></span>
+          <span>SUFFO ARCHITECTURAL STUDIO</span>
+        </div>
+        <div class="footer-motto">Quality // Urbanity // Sustainability</div>
+        <div class="footer-menu-toggle">
+          <a href="#home">Back to Top &uarr;</a>
+        </div>
+      </div>
+
+      <!-- Hero Contact Callout with Cross Accents -->
+      <div class="footer-hero-cta" id="contact">
+        <div class="green-cross top-left" aria-hidden="true">+</div>
+        <div class="green-cross top-right" aria-hidden="true">+</div>
+        <div class="green-cross bottom-left" aria-hidden="true">+</div>
+        <div class="green-cross bottom-right" aria-hidden="true">+</div>
+        
+        <span class="cta-eyebrow">START A PROJECT CONVERSATION</span>
+        <div class="phone-display">
+          <a href="tel:+019233023971">+01 923 302-39-71</a>
+        </div>
+        <div class="email-wrapper">
+          <a href="mailto:info@suffo.com" class="email-display">info@suffo.com</a>
+        </div>
+      </div>
+
+      <!-- Footer Navigation Grid -->
+      <div class="footer-nav-row">
+        <div class="fn-col">
+          <span class="fn-label">COPYRIGHT & LEGAL</span>
+          <p>&copy; 2024 SUFFO STUDIO INC.</p>
+          <p>ALL ARCHITECTURAL RIGHTS RESERVED.</p>
+        </div>
+        <div class="fn-col">
+          <span class="fn-label">MAIN OFFICE</span>
+          <p>4140 Parker Rd, Allentown</p>
+          <p>New Mexico 31134, United States</p>
+        </div>
+        <div class="fn-col align-right">
+          <span class="fn-label">CONNECT & DISCUSS</span>
+          <p class="social-links-row">
+            <a href="https://instagram.com" target="_blank" rel="noopener">INSTAGRAM</a> &bull; 
+            <a href="https://linkedin.com" target="_blank" rel="noopener">LINKEDIN</a> &bull; 
+            <a href="https://behance.net" target="_blank" rel="noopener">BEHANCE</a>
+          </p>
+          <p><a href="#privacy" class="privacy-link">PRIVACY POLICY & TERMS</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Oversized Graphic Logo Base (Clipped) -->
+    <div class="footer-massive-logo" aria-hidden="true">
+      <span>suffo</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
